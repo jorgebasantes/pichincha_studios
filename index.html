@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pichincha Studios - Servicios de Edición de Video</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Pantalla de Carga -->
+  <div id="splash-screen">
+    <h1>Bienvenido a Pichincha Studios 🎥<br>Cargando.....</h1>
+  </div>
+
+  <!-- Contenido Principal (Formulario de Inicio de Sesión, Servicios, Testimonios) -->
+  <div id="main-content">
+    
+    <!-- Sección de Encabezado -->
+    <header>
+      <div class="header-container">
+        
+        <h1> </h1>
+       
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#login">Inicio</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#payment">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenedor Compartido de Testimonios e Inicio de Sesión -->
+    <section id="login" class="testimonials-login-container">
+      
+      <!-- Sección de Testimonios -->
+      <div class="testimonials-section">
+        <h2>🗣️ Lo que dicen nuestros clientes</h2>
+        <p>"Pichincha Studios transformó nuestra visión en realidad con ediciones de video impresionantes. ¡Los resultados superaron nuestras expectativas!"</p> <p>- María Ester..,Directora Creativa</p>
+        <p>"No podría estar más feliz con la corrección de color y los efectos visuales. ¡Pichincha Studios hizo que mi video destacara!"</p>
+        <p>- shirley., Organizadora de Eventos</p>
+      </div>
+
+      <!-- Sección de Inicio de Sesión -->
+      <div class="login-section">
+        <h2>🔑 Inicia Sesión en tu Estudio</h2>
+        <form id="login-form">
+          <label for="username">👤 Usuario:</label>
+          <input type="text" id="username" placeholder="Ingresa tu usuario" required>
+          
+          <label for="password">🔑 Contraseña:</label>
+          <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+          
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p id="error-message">¡Usuario o contraseña inválidos!</p>
+      </div>
+
+    </section>
+
+    <!-- Sección de Servicios de Edición de Video -->
+    <section id="services" class="video-editing-services">
+      <h2>🎬 Nuestros Servicios de Edición de Video</h2>
+      <p>En Pichincha Estudios ofrecemos una gama de servicios profesionales de edición de video para dar vida a tu visión:</p>
+      <div class="services-list">
+        <div class="service">
+          <h3>🔮 Composición</h3>
+          <p>Mejora tus videos con animaciones llamativas, títulos y efectos visuales.</p>
+        </div>
+        <div class="service">
+          <h3>🎞️ Corrección y Grading de Color</h3>
+          <p>Haz que tus tomas resalten con ajustes precisos de color y grading para efectos cinematográficos.</p>
+        </div>
+        <div class="service">
+          <h3>💥 Efectos Visuales (VFX)</h3>
+          <p>Integra efectos visuales sorprendentes para agregar un toque profesional a tus proyectos de video.</p>
+        </div>
+        <div class="service">
+          <h3>🎥 Videos Corporativos y para Redes Sociales</h3>
+          <p>Crea contenido atractivo para empresas, anuncios y plataformas de redes sociales.</p>
+        </div>
+        <div class="service">
+          <h3>🎤 Producción de Videos Musicales</h3>
+          <p>Integra efectos visuales sorprendentes para agregar un toque profesional a tus proyectos de video.</p>
+        </div>
+          <div class="service">
+          <h3>🏢 Producción de Videos Corporativos</h3>
+          <p>Integra efectos visuales sorprendentes para agregar un toque profesional a tus proyectos de video.</p>
+          </div>
+          <div class="service">
+          <h3>🎨 Gráficos en Movimiento</h3>
+          <p>Integra efectos visuales sorprendentes para agregar un toque profesional a tus proyectos de video.</p>
+          </div>
+          <div class="service">
+          <h3>📝 Consultas de Edición</h3>
+          <p>Obtén orientación profesional para optimizar la edición de tus videos.</p>
+          
+        </div>
+        
+
+      </div>
+    </section>
+
+    <!-- Portafolio de Videos -->
+    <section id="portfolio" class="video-gallery">
+      <h2>🎬 Portafolio</h2>
+      <div class="gallery">
+        <div class="video-thumbnail">
+          <img src="images/p.png" alt="Video Ejemplo 2">
+          <p>www..eltuyo</p>
+        </div>
+        <div class="video-thumbnail">
+          <img src="images/colorblack.png" alt="Video Ejemplo 2">
+          <p>Corrección y Grading de Color</p>
+        </div>
+        <div class="video-thumbnail">
+          <img src="images/consultame.png" alt="Video Ejemplo 3">
+          <p>Pichincha studios</p>
+        </div>
+        <div class="video-thumbnail">
+          <video src="video/eventcoverage.mp4" autoplay muted loop></video>
+          <p>cuvertura de eventos</p>
+        </div>
+        <div class="video-thumbnail">
+          <video src="video/capacitacion.mp4" autoplay muted loop></video>
+          <p>capacitacion</p>
+        </div>
+        <div class="video-thumbnail">
+          <video src="video/Planificación.mp4" autoplay muted loop></video>
+          <p>consultas</p>
+        </div>
+       
+      </div>
+    </section>
+<!-- Payment Section -->
+<section id="payment" class="payment-section">
+  <h2>💳 Realiza un Pago o Contáctanos</h2>
+  <p>Haz clic en uno de los botones para realizar un pago o contactarnos a través de WhatsApp:</p>
+  
+  <!-- PayPal Button -->
+  <a href="https://paypal.me/basantesjay87" class="payment-button paypal-button">
+    Comprar Ahora con PayPal
+  </a>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/593995651571" class="payment-button whatsapp-button">
+    Contáctanos por WhatsApp
+  </a>
+</section>
+
+   
+
+  <!-- Sección de Pie de Página -->
+  <footer>
+    <p>&copy; 2024 Pichincha Studios | Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const splashScreen = document.getElementById("splash-screen");
+      const mainContent = document.getElementById("main-content");
+
+      // Mostrar pantalla de carga por 3 segundos, luego mostrar el contenido principal
+      setTimeout(() => {
+        splashScreen.style.display = "none"; // Ocultar pantalla de carga
+        mainContent.style.display = "block"; // Mostrar el contenido principal
+      }, 3000);
+    });
+
+    // Base de datos de ejemplo para usuarios de Pichincha Estudios
+    const users = {
+      angie: { password: "angie123", page: "angie.html" },
+      jorge: { password: "jorge123", page: "https://www.jorgebasantes.com" },
+      family: { password: "family123", page: "family.html" },
+    };
+
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Evitar que el formulario recargue la página
+
+      // Obtener valores ingresados
+      const username = document.getElementById("username").value.toLowerCase(); // Convertir usuario a minúsculas
+      const password = document.getElementById("password").value;
+
+      // Verificar si el usuario existe y la contraseña coincide
+      if (users[username] && users[username].password === password) {
+        // Redirigir a la página del usuario
+        window.location.replace(users[username].page); // Usar replace() para cambiar ubicación
+      } else {
+        // Mostrar mensaje de error
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.style.display = "block";
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Splash Screen */
+#splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d0d1d3; /* Dark Blue Background */
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Main Content */
+#main-content {
+  display: none;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  background-image: url('images/Pichinchas.png'); /* Set the background image */
+  background-size: cover; /* Cover the entire header with the image */
+  background-position: center; /* Center the image */
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* Space out items (image, heading, and paragraph) */
+  align-items: center;
+  padding: 20px;
+  height: 40vh;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: flex-start; /* Align text to the left */
+  text-align: left;
+  margin-right: 20px; 
+ 
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+nav {
+  text-align: center;
+  margin-top: 1rem;
+ 
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 120px;
+  font-size: 1.2rem;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #4b4747;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #e2b97f; /* Accent Color */
+}
+
+/* Testimonials and Login Section */
+.testimonials-login-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.testimonials-section,
+.login-section {
+  width: 48%;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonials-section h2,
+.login-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials-section p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.testimonials-section p:first-child {
+  font-style: italic;
+}
+
+.login-section label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.login-section input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-section button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #1e2a38; /* Dark Blue */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-section button:hover {
+  background-color: #e2b97f; /* Accent Color */
+}
+
+#error-message {
+  color: red;
+  font-size: 1rem;
+  display: none;
+  margin-top: 0.5rem;
+}
+
+/* Video Editing Services Section */
+.video-editing-services {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.video-editing-services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.video-editing-services p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 22%;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service p {
+  font-size: 1rem;
+}
+
+/* Video Gallery Section */
+.video-gallery {
+  margin-top: 3rem;
+}
+
+.video-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.video-thumbnail {
+  width: 30%;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-thumbnail p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.video-thumbnail video{
+  width: 100%; /* Ensures the video takes up the full width of the container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Adds rounded corners */
+  display: block; /* Removes any unwanted inline spacing */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /
+}
+/* PayPal Section */
+#paypal-section {
+  text-align: center;
+  margin-top: 3rem;
+  padding-left: 180px;
+}
+
+#paypal-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+#paypal-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#contact{
+  padding-left: 80px;
+}
+#contact button{
+  display: inline-block;
+  background-color: #f68b1e; /* Bright orange for attention */
+  color: #fff; /* White text */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+}
+#contact button:hover{
+  background-color: #e07815; /* Slightly darker on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+#contact button:active{
+  background-color: #cc6e12; /* Even darker when clicked */
+  transform: scale(0.95); /* Slight shrink effect */
+}
+/* Footer */
+footer {
+  background-color: #696b6d; /* Dark Blue */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer a {
+  color: #e2b97f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+/* For screens 768px and smaller */
+@media only screen and (max-width: 768px) {
+
+  /* Header */
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  /* Testimonials and Login Section */
+  .testimonials-login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials-section,
+  .login-section {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  /* Video Editing Services */
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  /* Video Gallery */
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-thumbnail {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  /* PayPal Section */
+  #paypal-section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For screens 480px and smaller (Phones) */
+@media only screen and (max-width: 480px) {
+
+  /* Header */
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    display: none;
+  }
+
+  /* Testimonials and Login Section */
+  .testimonials-section p,
+  .login-section label,
+  .login-section input {
+    font-size: 1rem;
+  }
+
+  .login-section button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  /* Video Editing Services */
+  .service h3 {
+    font-size: 1.2rem;
+  }
+
+  .service p {
+    font-size: 0.9rem;
+  }
+
+  /* Video Gallery */
+  .video-thumbnail img {
+    max-width: 100%;
+  }
+
+  .video-thumbnail p {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+
+header img#header-image {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.payment-section {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f9f9f9; /* Light background */
+}
+
+.payment-section h2 {
+  color: #333; /* Dark text */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.payment-section p {
+  color: #666; /* Subtle text color */
+  margin-bottom: 20px;
+}
+
+.payment-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paypal-button {
+  background-color: #0070ba; /* PayPal blue */
+  color: #fff; /* White text */
+}
+
+.paypal-button:hover {
+  background-color: #005c99; /* Darker blue */
+}
+
+.whatsapp-button {
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff; /* White text */
+}
+
+.whatsapp-button:hover {
+  background-color: #1cb958; /* Darker green */
+}
